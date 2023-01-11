@@ -112,7 +112,7 @@ originDataScreen <- function(data,
       x <- xTildLongTild.i[rowToKeep,]
       y <- yTildLongTild.i[rowToKeep]
       
-      if (nrow(x) * ncol(x) < run_linear_thresh) {
+      if ((nrow(x) * ncol(x) < run_linear_thresh) && (nrow(x)>ncol(x))) {
         Penal.i <- runlinear(x = x,
                              y = y,
                              nPredics = nPredics)

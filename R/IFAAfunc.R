@@ -168,7 +168,8 @@
 ##' @importFrom stringr str_order
 ##' @importFrom S4Vectors DataFrame
 ##' @importFrom DescTools DoCall
-##' @importFrom MatrixExtra tcrossprod crossprod rbind_csr as.csc.matrix
+##' @importFrom MatrixExtra rbind_csr as.csc.matrix
+##' @importMethodsFrom MatrixExtra tcrossprod crossprod
 ##' @importFrom methods is
 ##' @export
 ##' @md

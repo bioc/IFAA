@@ -109,7 +109,7 @@ dataRecovTrans <- function(data,
       # rm(sVec)
 
       xDataTilda.i <-
-        MatrixExtra::crossprod(omegaRoot[[i]], MatrixExtra::tcrossprod(A[[i]], xInRegres.i.transpos))
+        Matrix::crossprod(omegaRoot[[i]], Matrix::tcrossprod(A[[i]], xInRegres.i.transpos))
       rm(xInRegres.i.transpos)
       xtild[[j]] <- xDataTilda.i
 
@@ -128,7 +128,7 @@ dataRecovTrans <- function(data,
   if (yOnly) {
     for (j in seq_len(lengthTwoList)) {
       i <- twoList[j]
-      Utilda.i <- MatrixExtra::crossprod(omegaRoot[[i]], logRatiow[[i]])
+      Utilda.i <- Matrix::crossprod(omegaRoot[[i]], logRatiow[[i]])
       if (j == 1) {
         UtildaLong <- as.numeric(Utilda.i)
       } else {
@@ -175,7 +175,7 @@ dataRecovTrans <- function(data,
     # rm(sVec)
 
     xDataTilda.i <-
-      MatrixExtra::crossprod(omegaRoot[[i]], MatrixExtra::tcrossprod(A[[i]], xInRegres.i.transpos))
+      Matrix::crossprod(omegaRoot[[i]], Matrix::tcrossprod(A[[i]], xInRegres.i.transpos))
     rm(xInRegres.i.transpos)
     xtild[[j]] <- xDataTilda.i
 
@@ -188,7 +188,7 @@ dataRecovTrans <- function(data,
 
   for (j in seq_len(lengthTwoList)) {
     i <- twoList[j]
-    Utilda.i <- MatrixExtra::crossprod(omegaRoot[[i]], logRatiow[[i]])
+    Utilda.i <- Matrix::crossprod(omegaRoot[[i]], logRatiow[[i]])
     if (j == 1) {
       UtildaLong <- as.numeric(Utilda.i)
     } else {

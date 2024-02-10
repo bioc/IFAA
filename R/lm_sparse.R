@@ -29,18 +29,18 @@ lm_sparse <- function(x, y,intercept=FALSE, tol = 1e-07){
   xnames <- colnames(x)
   rm(x)
   
-  XTX    <- MatrixExtra::crossprod(newX)
-  Xy     <- MatrixExtra::crossprod(newX, y)
+  XTX    <- Matrix::crossprod(newX)
+  Xy     <- Matrix::crossprod(newX, y)
   rm(newX)
   
   coef   <- Matrix::solve(XTX, Xy, tol = tol)
   coefficients       <- rep(NA, nvar)
   coefficients[keep] <- coef     
   
-  yy      <- MatrixExtra::crossprod(y)
+  yy      <- Matrix::crossprod(y)
   rm(y)
   
-  RSS     <- yy - 2 * MatrixExtra::crossprod(coef, Xy) + MatrixExtra::crossprod(coef, MatrixExtra::crossprod(XTX, coef))
+  RSS     <- yy - 2 * Matrix::crossprod(coef, Xy) + Matrix::crossprod(coef, Matrix::crossprod(XTX, coef))
   var_res <- as.numeric(RSS)/dfr
   se_coef <- rep(NA, nvar)
   inv     <- Matrix::solve( XTX, diag(nrow(XTX)), tol = tol)

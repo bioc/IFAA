@@ -158,7 +158,7 @@
 ##' @importFrom parallelly availableCores
 ##' @importFrom parallel makeCluster clusterExport stopCluster clusterSetRNGStream
 ##' @importFrom doParallel registerDoParallel
-##' @importFrom Matrix Diagonal Matrix sparseVector
+##' @importFrom Matrix Diagonal Matrix sparseVector tcrossprod crossprod
 ##' @importFrom glmnet glmnet
 ##' @importFrom HDCI bootLOPR
 ##' @import mathjaxr
@@ -169,7 +169,6 @@
 ##' @importFrom S4Vectors DataFrame
 ##' @importFrom DescTools DoCall
 ##' @importFrom MatrixExtra rbind_csr as.csc.matrix
-##' @importMethodsFrom MatrixExtra tcrossprod crossprod
 ##' @importFrom methods is
 ##' @export
 ##' @md

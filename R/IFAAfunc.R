@@ -160,7 +160,6 @@
 ##' @importFrom doParallel registerDoParallel
 ##' @importFrom Matrix Diagonal Matrix sparseVector tcrossprod crossprod
 ##' @importFrom glmnet glmnet
-##' @importFrom HDCI bootLOPR
 ##' @import mathjaxr
 ##' @import stats
 ##' @import utils

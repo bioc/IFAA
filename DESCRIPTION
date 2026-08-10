@@ -31,7 +31,7 @@ BugReports: https://github.com/quranwu/IFAA/issues
 LazyData: FALSE
 RoxygenNote: 7.3.1
 Depends: R (>= 4.2.0),
-Imports: mathjaxr, doRNG, foreach (>= 1.4.3), Matrix (>= 1.4-0), HDCI (>= 1.0-2),
+Imports: mathjaxr, doRNG, foreach (>= 1.4.3), Matrix (>= 1.4-0),
         parallel (>= 3.3.0), doParallel (>= 1.0.11), parallelly ,
         glmnet, stats, utils, SummarizedExperiment, stringr, S4Vectors,
         DescTools, MatrixExtra, methods

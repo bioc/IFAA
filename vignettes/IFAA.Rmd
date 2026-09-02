@@ -1,11 +1,6 @@
 ---
 title: "IFAA"
-# output: rmarkdown::html_vignette
-output: pdf_document
-# output:
-#   BiocStyle::html_document:
-#     toc: true
-#     toc_depth: 2
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{IFAA}
   %\VignetteEngine{knitr::rmarkdown}

@@ -1,6 +1,6 @@
 Package: IFAA
 Title: Robust Inference for Absolute Abundance in Microbiome Analysis
-Version: 1.15.0
+Version: 1.15.1
 Authors@R: c(person(given = "Quran",
            family = "Wu",
            role = c("aut"),
